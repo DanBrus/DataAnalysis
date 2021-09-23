@@ -656,12 +656,21 @@ namespace MOAED_Cch
             
 
             BinaryReader reader = new BinaryReader(File.OpenRead(openFileDialog1.FileName));
+
             double[] data = new double[reader.BaseStream.Length / 4];
             double step = reader.ReadDouble();
+
+            //double[] data = new double[reader.BaseStream.Length / 2];
+            //double step = Convert.ToDouble(fileStepNUD.Value);
+
             for (int i = 0; i < (reader.BaseStream.Length - 8) / 4; i++)
             {
                 data[i] = reader.ReadSingle();
             }
+            //for (int i = 0; i < reader.BaseStream.Length / 2; i++)
+            //{
+            //    data[i] = reader.ReadInt16();
+            //}
 
             reader.Close();
 

@@ -35,16 +35,24 @@
             this.zedGraphControl4 = new ZedGraph.ZedGraphControl();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.PrintPage = new System.Windows.Forms.TabPage();
+            this.EditTypeCB = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.EditName = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.UnionGB = new System.Windows.Forms.GroupBox();
+            this.editMultBtn = new System.Windows.Forms.Button();
+            this.UniteBtn = new System.Windows.Forms.Button();
+            this.SecondCB = new System.Windows.Forms.ComboBox();
+            this.FirstCB = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SumBtn = new System.Windows.Forms.Button();
             this.cuttingGB = new System.Windows.Forms.GroupBox();
             this.label65 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.cutToNUD = new System.Windows.Forms.NumericUpDown();
             this.cutFromNUD = new System.Windows.Forms.NumericUpDown();
             this.cutBtn = new System.Windows.Forms.Button();
-            this.EditTypeCB = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.EditName = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.suppressGB = new System.Windows.Forms.GroupBox();
             this.suppressWindowNUD = new System.Windows.Forms.NumericUpDown();
             this.suppressWindowBtn = new System.Windows.Forms.Button();
@@ -67,44 +75,10 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.convolutionBtn = new System.Windows.Forms.Button();
-            this.UnionGB = new System.Windows.Forms.GroupBox();
-            this.editMultBtn = new System.Windows.Forms.Button();
-            this.UniteBtn = new System.Windows.Forms.Button();
-            this.SecondCB = new System.Windows.Forms.ComboBox();
-            this.FirstCB = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.SumBtn = new System.Windows.Forms.Button();
             this.DataPage = new System.Windows.Forms.TabPage();
             this.label15 = new System.Windows.Forms.Label();
             this.ModelTypeCB = new System.Windows.Forms.ComboBox();
             this.NewModelButton = new System.Windows.Forms.Button();
-            this.FilterGB = new System.Windows.Forms.GroupBox();
-            this.filterStepNUD = new System.Windows.Forms.NumericUpDown();
-            this.label49 = new System.Windows.Forms.Label();
-            this.filterFreqNUD = new System.Windows.Forms.NumericUpDown();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.filterTypeGB = new System.Windows.Forms.ComboBox();
-            this.filterStepsNUD = new System.Windows.Forms.NumericUpDown();
-            this.label52 = new System.Windows.Forms.Label();
-            this.filterSNUD = new System.Windows.Forms.NumericUpDown();
-            this.fildasda = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.randGB = new System.Windows.Forms.GroupBox();
-            this.RandStep = new System.Windows.Forms.NumericUpDown();
-            this.label32 = new System.Windows.Forms.Label();
-            this.RandStart = new System.Windows.Forms.NumericUpDown();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.RandTypeCB = new System.Windows.Forms.ComboBox();
-            this.randSteps = new System.Windows.Forms.NumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
-            this.randMax = new System.Windows.Forms.NumericUpDown();
-            this.randMin = new System.Windows.Forms.NumericUpDown();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.ExpGB = new System.Windows.Forms.GroupBox();
             this.ExpStepCtr = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
@@ -159,17 +133,33 @@
             this.HarmAmp = new System.Windows.Forms.NumericUpDown();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
+            this.FilterGB = new System.Windows.Forms.GroupBox();
+            this.filterStepNUD = new System.Windows.Forms.NumericUpDown();
+            this.label49 = new System.Windows.Forms.Label();
+            this.filterFreqNUD = new System.Windows.Forms.NumericUpDown();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.filterTypeGB = new System.Windows.Forms.ComboBox();
+            this.filterStepsNUD = new System.Windows.Forms.NumericUpDown();
+            this.label52 = new System.Windows.Forms.Label();
+            this.filterSNUD = new System.Windows.Forms.NumericUpDown();
+            this.fildasda = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.randGB = new System.Windows.Forms.GroupBox();
+            this.RandStep = new System.Windows.Forms.NumericUpDown();
+            this.label32 = new System.Windows.Forms.Label();
+            this.RandStart = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.RandTypeCB = new System.Windows.Forms.ComboBox();
+            this.randSteps = new System.Windows.Forms.NumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
+            this.randMax = new System.Windows.Forms.NumericUpDown();
+            this.randMin = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.Anal_page = new System.Windows.Forms.TabPage();
-            this.geneticalGB = new System.Windows.Forms.GroupBox();
-            this.geneticalModelCB = new System.Windows.Forms.ComboBox();
-            this.geneticalEtalonModelCB = new System.Windows.Forms.ComboBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.geneticalBtn = new System.Windows.Forms.Button();
-            this.label68 = new System.Windows.Forms.Label();
-            this.geneticalNameTB = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.geneticalStepsNUD = new System.Windows.Forms.NumericUpDown();
             this.ampModulationGB = new System.Windows.Forms.GroupBox();
             this.modulModulatingCB = new System.Windows.Forms.ComboBox();
             this.modulOriginalCB = new System.Windows.Forms.ComboBox();
@@ -217,7 +207,18 @@
             this.label35 = new System.Windows.Forms.Label();
             this.DistribNUD = new System.Windows.Forms.NumericUpDown();
             this.Distribution_Btn = new System.Windows.Forms.Button();
+            this.geneticalGB = new System.Windows.Forms.GroupBox();
+            this.geneticalModelCB = new System.Windows.Forms.ComboBox();
+            this.geneticalEtalonModelCB = new System.Windows.Forms.ComboBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.geneticalBtn = new System.Windows.Forms.Button();
+            this.label68 = new System.Windows.Forms.Label();
+            this.geneticalNameTB = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.geneticalStepsNUD = new System.Windows.Forms.NumericUpDown();
             this.SaveLoadPage = new System.Windows.Forms.TabPage();
+            this.fileWavSave = new System.Windows.Forms.Button();
             this.fileWavLoad = new System.Windows.Forms.Button();
             this.fileSaveBtn = new System.Windows.Forms.Button();
             this.fileLoadBtn = new System.Windows.Forms.Button();
@@ -243,9 +244,9 @@
             this.modelsList = new System.Windows.Forms.ListBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.fileWavSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.PrintPage.SuspendLayout();
+            this.UnionGB.SuspendLayout();
             this.cuttingGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cutToNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cutFromNUD)).BeginInit();
@@ -257,19 +258,7 @@
             this.editSimpleGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.simpleEditNUD)).BeginInit();
             this.convolutionGB.SuspendLayout();
-            this.UnionGB.SuspendLayout();
             this.DataPage.SuspendLayout();
-            this.FilterGB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.filterStepNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filterFreqNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filterStepsNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filterSNUD)).BeginInit();
-            this.randGB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RandStep)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RandStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.randSteps)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.randMax)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.randMin)).BeginInit();
             this.ExpGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExpStepCtr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpStep)).BeginInit();
@@ -297,9 +286,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.HarmStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HarmSteps)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HarmAmp)).BeginInit();
+            this.FilterGB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.filterStepNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filterFreqNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filterStepsNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filterSNUD)).BeginInit();
+            this.randGB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RandStep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RandStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.randSteps)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.randMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.randMin)).BeginInit();
             this.Anal_page.SuspendLayout();
-            this.geneticalGB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.geneticalStepsNUD)).BeginInit();
             this.ampModulationGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modulCoefficientNUD)).BeginInit();
             this.SNRGB.SuspendLayout();
@@ -315,6 +313,8 @@
             this.AutocorGP.SuspendLayout();
             this.DistribGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DistribNUD)).BeginInit();
+            this.geneticalGB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.geneticalStepsNUD)).BeginInit();
             this.SaveLoadPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileStepNUD)).BeginInit();
             this.ProphertiesPage.SuspendLayout();
@@ -335,6 +335,7 @@
             this.zedGraphControl1.ScrollMinY2 = 0D;
             this.zedGraphControl1.Size = new System.Drawing.Size(478, 281);
             this.zedGraphControl1.TabIndex = 0;
+            this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
             // zedGraphControl2
             // 
@@ -349,6 +350,7 @@
             this.zedGraphControl2.ScrollMinY2 = 0D;
             this.zedGraphControl2.Size = new System.Drawing.Size(478, 281);
             this.zedGraphControl2.TabIndex = 1;
+            this.zedGraphControl2.UseExtendedPrintDialog = true;
             // 
             // zedGraphControl3
             // 
@@ -363,6 +365,7 @@
             this.zedGraphControl3.ScrollMinY2 = 0D;
             this.zedGraphControl3.Size = new System.Drawing.Size(474, 281);
             this.zedGraphControl3.TabIndex = 2;
+            this.zedGraphControl3.UseExtendedPrintDialog = true;
             // 
             // zedGraphControl4
             // 
@@ -377,6 +380,7 @@
             this.zedGraphControl4.ScrollMinY2 = 0D;
             this.zedGraphControl4.Size = new System.Drawing.Size(474, 281);
             this.zedGraphControl4.TabIndex = 3;
+            this.zedGraphControl4.UseExtendedPrintDialog = true;
             // 
             // tabControl1
             // 
@@ -393,17 +397,17 @@
             // 
             // PrintPage
             // 
-            this.PrintPage.Controls.Add(this.cuttingGB);
             this.PrintPage.Controls.Add(this.EditTypeCB);
             this.PrintPage.Controls.Add(this.label17);
             this.PrintPage.Controls.Add(this.EditName);
             this.PrintPage.Controls.Add(this.label16);
+            this.PrintPage.Controls.Add(this.UnionGB);
+            this.PrintPage.Controls.Add(this.cuttingGB);
             this.PrintPage.Controls.Add(this.suppressGB);
             this.PrintPage.Controls.Add(this.SmoothGB);
             this.PrintPage.Controls.Add(this.LinearisationGB);
             this.PrintPage.Controls.Add(this.editSimpleGB);
             this.PrintPage.Controls.Add(this.convolutionGB);
-            this.PrintPage.Controls.Add(this.UnionGB);
             this.PrintPage.Location = new System.Drawing.Point(4, 22);
             this.PrintPage.Name = "PrintPage";
             this.PrintPage.Padding = new System.Windows.Forms.Padding(3);
@@ -411,6 +415,137 @@
             this.PrintPage.TabIndex = 0;
             this.PrintPage.Text = "Edit";
             this.PrintPage.UseVisualStyleBackColor = true;
+            // 
+            // EditTypeCB
+            // 
+            this.EditTypeCB.AutoCompleteCustomSource.AddRange(new string[] {
+            "Statinarity",
+            "Distribution",
+            "Autocorrelation",
+            "Corralation"});
+            this.EditTypeCB.FormattingEnabled = true;
+            this.EditTypeCB.Items.AddRange(new object[] {
+            "Union models",
+            "linearisation",
+            "Smoothing",
+            "Convolution",
+            "Trend suppressing",
+            "Simple",
+            "Cutting"});
+            this.EditTypeCB.Location = new System.Drawing.Point(51, 37);
+            this.EditTypeCB.Name = "EditTypeCB";
+            this.EditTypeCB.Size = new System.Drawing.Size(164, 21);
+            this.EditTypeCB.TabIndex = 8;
+            this.EditTypeCB.SelectedIndexChanged += new System.EventHandler(this.EditTupeCB_SelectedIndexChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(2, 40);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(49, 13);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "EditType";
+            // 
+            // EditName
+            // 
+            this.EditName.Location = new System.Drawing.Point(51, 9);
+            this.EditName.Name = "EditName";
+            this.EditName.Size = new System.Drawing.Size(164, 20);
+            this.EditName.TabIndex = 6;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(8, 12);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(35, 13);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Name";
+            // 
+            // UnionGB
+            // 
+            this.UnionGB.Controls.Add(this.editMultBtn);
+            this.UnionGB.Controls.Add(this.UniteBtn);
+            this.UnionGB.Controls.Add(this.SecondCB);
+            this.UnionGB.Controls.Add(this.FirstCB);
+            this.UnionGB.Controls.Add(this.label1);
+            this.UnionGB.Controls.Add(this.label2);
+            this.UnionGB.Controls.Add(this.SumBtn);
+            this.UnionGB.Location = new System.Drawing.Point(3, 64);
+            this.UnionGB.Name = "UnionGB";
+            this.UnionGB.Size = new System.Drawing.Size(212, 100);
+            this.UnionGB.TabIndex = 9;
+            this.UnionGB.TabStop = false;
+            this.UnionGB.Text = "Union";
+            // 
+            // editMultBtn
+            // 
+            this.editMultBtn.Location = new System.Drawing.Point(121, 71);
+            this.editMultBtn.Name = "editMultBtn";
+            this.editMultBtn.Size = new System.Drawing.Size(86, 23);
+            this.editMultBtn.TabIndex = 6;
+            this.editMultBtn.Text = "Mult";
+            this.editMultBtn.UseVisualStyleBackColor = true;
+            this.editMultBtn.Click += new System.EventHandler(this.editMultBtn_Click);
+            // 
+            // UniteBtn
+            // 
+            this.UniteBtn.Location = new System.Drawing.Point(120, 45);
+            this.UniteBtn.Name = "UniteBtn";
+            this.UniteBtn.Size = new System.Drawing.Size(86, 23);
+            this.UniteBtn.TabIndex = 5;
+            this.UniteBtn.Text = "Unite";
+            this.UniteBtn.UseVisualStyleBackColor = true;
+            this.UniteBtn.Click += new System.EventHandler(this.UniteBtn_Click);
+            // 
+            // SecondCB
+            // 
+            this.SecondCB.FormattingEnabled = true;
+            this.SecondCB.Location = new System.Drawing.Point(6, 73);
+            this.SecondCB.Name = "SecondCB";
+            this.SecondCB.Size = new System.Drawing.Size(108, 21);
+            this.SecondCB.TabIndex = 1;
+            this.SecondCB.SelectedIndexChanged += new System.EventHandler(this.SecondCB_SelectedIndexChanged);
+            this.SecondCB.Click += new System.EventHandler(this.SecondCB_Click);
+            // 
+            // FirstCB
+            // 
+            this.FirstCB.FormattingEnabled = true;
+            this.FirstCB.Location = new System.Drawing.Point(6, 33);
+            this.FirstCB.Name = "FirstCB";
+            this.FirstCB.Size = new System.Drawing.Size(108, 21);
+            this.FirstCB.TabIndex = 0;
+            this.FirstCB.SelectedIndexChanged += new System.EventHandler(this.FirstCB_SelectedIndexChanged);
+            this.FirstCB.Click += new System.EventHandler(this.FirstCB_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "First";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Second";
+            // 
+            // SumBtn
+            // 
+            this.SumBtn.Location = new System.Drawing.Point(120, 20);
+            this.SumBtn.Name = "SumBtn";
+            this.SumBtn.Size = new System.Drawing.Size(86, 23);
+            this.SumBtn.TabIndex = 4;
+            this.SumBtn.Text = "Sum";
+            this.SumBtn.UseVisualStyleBackColor = true;
+            this.SumBtn.Click += new System.EventHandler(this.SumBtn_Click);
             // 
             // cuttingGB
             // 
@@ -494,53 +629,6 @@
             this.cutBtn.Text = "Cut";
             this.cutBtn.UseVisualStyleBackColor = true;
             this.cutBtn.Click += new System.EventHandler(this.cutBtn_Click);
-            // 
-            // EditTypeCB
-            // 
-            this.EditTypeCB.AutoCompleteCustomSource.AddRange(new string[] {
-            "Statinarity",
-            "Distribution",
-            "Autocorrelation",
-            "Corralation"});
-            this.EditTypeCB.FormattingEnabled = true;
-            this.EditTypeCB.Items.AddRange(new object[] {
-            "Union models",
-            "linearisation",
-            "Smoothing",
-            "Convolution",
-            "Trend suppressing",
-            "Simple",
-            "Cutting"});
-            this.EditTypeCB.Location = new System.Drawing.Point(51, 37);
-            this.EditTypeCB.Name = "EditTypeCB";
-            this.EditTypeCB.Size = new System.Drawing.Size(164, 21);
-            this.EditTypeCB.TabIndex = 8;
-            this.EditTypeCB.SelectedIndexChanged += new System.EventHandler(this.EditTupeCB_SelectedIndexChanged);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(2, 40);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 13);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "EditType";
-            // 
-            // EditName
-            // 
-            this.EditName.Location = new System.Drawing.Point(51, 9);
-            this.EditName.Name = "EditName";
-            this.EditName.Size = new System.Drawing.Size(164, 20);
-            this.EditName.TabIndex = 6;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(8, 12);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(35, 13);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Name";
             // 
             // suppressGB
             // 
@@ -804,101 +892,17 @@
             this.convolutionBtn.UseVisualStyleBackColor = true;
             this.convolutionBtn.Click += new System.EventHandler(this.convolutionBtn_Click);
             // 
-            // UnionGB
-            // 
-            this.UnionGB.Controls.Add(this.editMultBtn);
-            this.UnionGB.Controls.Add(this.UniteBtn);
-            this.UnionGB.Controls.Add(this.SecondCB);
-            this.UnionGB.Controls.Add(this.FirstCB);
-            this.UnionGB.Controls.Add(this.label1);
-            this.UnionGB.Controls.Add(this.label2);
-            this.UnionGB.Controls.Add(this.SumBtn);
-            this.UnionGB.Location = new System.Drawing.Point(3, 64);
-            this.UnionGB.Name = "UnionGB";
-            this.UnionGB.Size = new System.Drawing.Size(212, 100);
-            this.UnionGB.TabIndex = 9;
-            this.UnionGB.TabStop = false;
-            this.UnionGB.Text = "Union";
-            // 
-            // editMultBtn
-            // 
-            this.editMultBtn.Location = new System.Drawing.Point(121, 71);
-            this.editMultBtn.Name = "editMultBtn";
-            this.editMultBtn.Size = new System.Drawing.Size(86, 23);
-            this.editMultBtn.TabIndex = 6;
-            this.editMultBtn.Text = "Mult";
-            this.editMultBtn.UseVisualStyleBackColor = true;
-            this.editMultBtn.Click += new System.EventHandler(this.editMultBtn_Click);
-            // 
-            // UniteBtn
-            // 
-            this.UniteBtn.Location = new System.Drawing.Point(120, 45);
-            this.UniteBtn.Name = "UniteBtn";
-            this.UniteBtn.Size = new System.Drawing.Size(86, 23);
-            this.UniteBtn.TabIndex = 5;
-            this.UniteBtn.Text = "Unite";
-            this.UniteBtn.UseVisualStyleBackColor = true;
-            this.UniteBtn.Click += new System.EventHandler(this.UniteBtn_Click);
-            // 
-            // SecondCB
-            // 
-            this.SecondCB.FormattingEnabled = true;
-            this.SecondCB.Location = new System.Drawing.Point(6, 73);
-            this.SecondCB.Name = "SecondCB";
-            this.SecondCB.Size = new System.Drawing.Size(108, 21);
-            this.SecondCB.TabIndex = 1;
-            this.SecondCB.SelectedIndexChanged += new System.EventHandler(this.SecondCB_SelectedIndexChanged);
-            this.SecondCB.Click += new System.EventHandler(this.SecondCB_Click);
-            // 
-            // FirstCB
-            // 
-            this.FirstCB.FormattingEnabled = true;
-            this.FirstCB.Location = new System.Drawing.Point(6, 33);
-            this.FirstCB.Name = "FirstCB";
-            this.FirstCB.Size = new System.Drawing.Size(108, 21);
-            this.FirstCB.TabIndex = 0;
-            this.FirstCB.SelectedIndexChanged += new System.EventHandler(this.FirstCB_SelectedIndexChanged);
-            this.FirstCB.Click += new System.EventHandler(this.FirstCB_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "First";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Second";
-            // 
-            // SumBtn
-            // 
-            this.SumBtn.Location = new System.Drawing.Point(120, 20);
-            this.SumBtn.Name = "SumBtn";
-            this.SumBtn.Size = new System.Drawing.Size(86, 23);
-            this.SumBtn.TabIndex = 4;
-            this.SumBtn.Text = "Sum";
-            this.SumBtn.UseVisualStyleBackColor = true;
-            this.SumBtn.Click += new System.EventHandler(this.SumBtn_Click);
-            // 
             // DataPage
             // 
             this.DataPage.Controls.Add(this.label15);
             this.DataPage.Controls.Add(this.ModelTypeCB);
             this.DataPage.Controls.Add(this.NewModelButton);
-            this.DataPage.Controls.Add(this.FilterGB);
-            this.DataPage.Controls.Add(this.randGB);
             this.DataPage.Controls.Add(this.ExpGB);
             this.DataPage.Controls.Add(this.pulseGB);
             this.DataPage.Controls.Add(this.LinGB);
             this.DataPage.Controls.Add(this.HarmGB);
+            this.DataPage.Controls.Add(this.FilterGB);
+            this.DataPage.Controls.Add(this.randGB);
             this.DataPage.Location = new System.Drawing.Point(4, 22);
             this.DataPage.Name = "DataPage";
             this.DataPage.Padding = new System.Windows.Forms.Padding(3);
@@ -941,387 +945,6 @@
             this.NewModelButton.Text = "New";
             this.NewModelButton.UseVisualStyleBackColor = true;
             this.NewModelButton.Click += new System.EventHandler(this.NewModelButton_Click);
-            // 
-            // FilterGB
-            // 
-            this.FilterGB.BackColor = System.Drawing.Color.Transparent;
-            this.FilterGB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.FilterGB.Controls.Add(this.filterStepNUD);
-            this.FilterGB.Controls.Add(this.label49);
-            this.FilterGB.Controls.Add(this.filterFreqNUD);
-            this.FilterGB.Controls.Add(this.label50);
-            this.FilterGB.Controls.Add(this.label51);
-            this.FilterGB.Controls.Add(this.filterTypeGB);
-            this.FilterGB.Controls.Add(this.filterStepsNUD);
-            this.FilterGB.Controls.Add(this.label52);
-            this.FilterGB.Controls.Add(this.filterSNUD);
-            this.FilterGB.Controls.Add(this.fildasda);
-            this.FilterGB.Controls.Add(this.label55);
-            this.FilterGB.Location = new System.Drawing.Point(1, 29);
-            this.FilterGB.Name = "FilterGB";
-            this.FilterGB.Size = new System.Drawing.Size(219, 130);
-            this.FilterGB.TabIndex = 33;
-            this.FilterGB.TabStop = false;
-            this.FilterGB.Text = "Filters";
-            // 
-            // filterStepNUD
-            // 
-            this.filterStepNUD.DecimalPlaces = 6;
-            this.filterStepNUD.Location = new System.Drawing.Point(37, 42);
-            this.filterStepNUD.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.filterStepNUD.Name = "filterStepNUD";
-            this.filterStepNUD.Size = new System.Drawing.Size(67, 20);
-            this.filterStepNUD.TabIndex = 30;
-            this.filterStepNUD.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(6, 46);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(29, 13);
-            this.label49.TabIndex = 29;
-            this.label49.Text = "Step";
-            // 
-            // filterFreqNUD
-            // 
-            this.filterFreqNUD.DecimalPlaces = 2;
-            this.filterFreqNUD.Location = new System.Drawing.Point(37, 19);
-            this.filterFreqNUD.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.filterFreqNUD.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.filterFreqNUD.Name = "filterFreqNUD";
-            this.filterFreqNUD.Size = new System.Drawing.Size(67, 20);
-            this.filterFreqNUD.TabIndex = 28;
-            this.filterFreqNUD.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(10, 23);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(16, 13);
-            this.label50.TabIndex = 27;
-            this.label50.Text = "fc";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(5, 102);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(31, 13);
-            this.label51.TabIndex = 26;
-            this.label51.Text = "Type";
-            // 
-            // filterTypeGB
-            // 
-            this.filterTypeGB.FormattingEnabled = true;
-            this.filterTypeGB.Items.AddRange(new object[] {
-            "Low Freq",
-            "Hight Freq",
-            "Band pass filter",
-            "Notch filter"});
-            this.filterTypeGB.Location = new System.Drawing.Point(42, 98);
-            this.filterTypeGB.Name = "filterTypeGB";
-            this.filterTypeGB.Size = new System.Drawing.Size(170, 21);
-            this.filterTypeGB.TabIndex = 25;
-            // 
-            // filterStepsNUD
-            // 
-            this.filterStepsNUD.Location = new System.Drawing.Point(37, 65);
-            this.filterStepsNUD.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.filterStepsNUD.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.filterStepsNUD.Name = "filterStepsNUD";
-            this.filterStepsNUD.Size = new System.Drawing.Size(67, 20);
-            this.filterStepsNUD.TabIndex = 24;
-            this.filterStepsNUD.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(6, 69);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(34, 13);
-            this.label52.TabIndex = 23;
-            this.label52.Text = "Steps";
-            // 
-            // filterSNUD
-            // 
-            this.filterSNUD.DecimalPlaces = 2;
-            this.filterSNUD.Location = new System.Drawing.Point(140, 20);
-            this.filterSNUD.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.filterSNUD.Minimum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            -2147483648});
-            this.filterSNUD.Name = "filterSNUD";
-            this.filterSNUD.Size = new System.Drawing.Size(70, 20);
-            this.filterSNUD.TabIndex = 22;
-            this.filterSNUD.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // fildasda
-            // 
-            this.fildasda.AutoSize = true;
-            this.fildasda.Location = new System.Drawing.Point(117, 23);
-            this.fildasda.Name = "fildasda";
-            this.fildasda.Size = new System.Drawing.Size(26, 13);
-            this.fildasda.TabIndex = 20;
-            this.fildasda.Text = "S = ";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(116, 26);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(0, 13);
-            this.label55.TabIndex = 15;
-            // 
-            // randGB
-            // 
-            this.randGB.BackColor = System.Drawing.Color.Transparent;
-            this.randGB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.randGB.Controls.Add(this.RandStep);
-            this.randGB.Controls.Add(this.label32);
-            this.randGB.Controls.Add(this.RandStart);
-            this.randGB.Controls.Add(this.label25);
-            this.randGB.Controls.Add(this.label20);
-            this.randGB.Controls.Add(this.RandTypeCB);
-            this.randGB.Controls.Add(this.randSteps);
-            this.randGB.Controls.Add(this.label21);
-            this.randGB.Controls.Add(this.randMax);
-            this.randGB.Controls.Add(this.randMin);
-            this.randGB.Controls.Add(this.label22);
-            this.randGB.Controls.Add(this.label23);
-            this.randGB.Controls.Add(this.label24);
-            this.randGB.Location = new System.Drawing.Point(1, 29);
-            this.randGB.Name = "randGB";
-            this.randGB.Size = new System.Drawing.Size(219, 130);
-            this.randGB.TabIndex = 7;
-            this.randGB.TabStop = false;
-            this.randGB.Text = "Random";
-            // 
-            // RandStep
-            // 
-            this.RandStep.DecimalPlaces = 6;
-            this.RandStep.Location = new System.Drawing.Point(37, 65);
-            this.RandStep.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.RandStep.Name = "RandStep";
-            this.RandStep.Size = new System.Drawing.Size(81, 20);
-            this.RandStep.TabIndex = 30;
-            this.RandStep.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(5, 69);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(29, 13);
-            this.label32.TabIndex = 29;
-            this.label32.Text = "Step";
-            // 
-            // RandStart
-            // 
-            this.RandStart.DecimalPlaces = 2;
-            this.RandStart.Location = new System.Drawing.Point(6, 33);
-            this.RandStart.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.RandStart.Minimum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            -2147483648});
-            this.RandStart.Name = "RandStart";
-            this.RandStart.Size = new System.Drawing.Size(67, 20);
-            this.RandStart.TabIndex = 28;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(3, 17);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(29, 13);
-            this.label25.TabIndex = 27;
-            this.label25.Text = "Start";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(5, 102);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(31, 13);
-            this.label20.TabIndex = 26;
-            this.label20.Text = "Type";
-            // 
-            // RandTypeCB
-            // 
-            this.RandTypeCB.FormattingEnabled = true;
-            this.RandTypeCB.Items.AddRange(new object[] {
-            "Default C# Random",
-            "Array Random",
-            "Custom Random"});
-            this.RandTypeCB.Location = new System.Drawing.Point(42, 98);
-            this.RandTypeCB.Name = "RandTypeCB";
-            this.RandTypeCB.Size = new System.Drawing.Size(170, 21);
-            this.RandTypeCB.TabIndex = 25;
-            // 
-            // randSteps
-            // 
-            this.randSteps.Location = new System.Drawing.Point(149, 65);
-            this.randSteps.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.randSteps.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.randSteps.Name = "randSteps";
-            this.randSteps.Size = new System.Drawing.Size(64, 20);
-            this.randSteps.TabIndex = 24;
-            this.randSteps.Value = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(117, 69);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(34, 13);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "Steps";
-            // 
-            // randMax
-            // 
-            this.randMax.DecimalPlaces = 2;
-            this.randMax.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.randMax.Location = new System.Drawing.Point(149, 33);
-            this.randMax.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.randMax.Minimum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            -2147483648});
-            this.randMax.Name = "randMax";
-            this.randMax.Size = new System.Drawing.Size(63, 20);
-            this.randMax.TabIndex = 22;
-            this.randMax.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // randMin
-            // 
-            this.randMin.DecimalPlaces = 2;
-            this.randMin.Location = new System.Drawing.Point(78, 33);
-            this.randMin.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.randMin.Minimum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            -2147483648});
-            this.randMin.Name = "randMin";
-            this.randMin.Size = new System.Drawing.Size(67, 20);
-            this.randMin.TabIndex = 21;
-            this.randMin.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            -2147483648});
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(150, 17);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(26, 13);
-            this.label22.TabIndex = 20;
-            this.label22.Text = "max";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(75, 17);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(23, 13);
-            this.label23.TabIndex = 19;
-            this.label23.Text = "min";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(118, 40);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(0, 13);
-            this.label24.TabIndex = 15;
             // 
             // ExpGB
             // 
@@ -1470,7 +1093,7 @@
             // 
             // ExpA
             // 
-            this.ExpA.DecimalPlaces = 2;
+            this.ExpA.DecimalPlaces = 4;
             this.ExpA.Increment = new decimal(new int[] {
             1,
             0,
@@ -2160,142 +1783,405 @@
             this.label42.Size = new System.Drawing.Size(0, 13);
             this.label42.TabIndex = 15;
             // 
+            // FilterGB
+            // 
+            this.FilterGB.BackColor = System.Drawing.Color.Transparent;
+            this.FilterGB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FilterGB.Controls.Add(this.filterStepNUD);
+            this.FilterGB.Controls.Add(this.label49);
+            this.FilterGB.Controls.Add(this.filterFreqNUD);
+            this.FilterGB.Controls.Add(this.label50);
+            this.FilterGB.Controls.Add(this.label51);
+            this.FilterGB.Controls.Add(this.filterTypeGB);
+            this.FilterGB.Controls.Add(this.filterStepsNUD);
+            this.FilterGB.Controls.Add(this.label52);
+            this.FilterGB.Controls.Add(this.filterSNUD);
+            this.FilterGB.Controls.Add(this.fildasda);
+            this.FilterGB.Controls.Add(this.label55);
+            this.FilterGB.Location = new System.Drawing.Point(1, 29);
+            this.FilterGB.Name = "FilterGB";
+            this.FilterGB.Size = new System.Drawing.Size(219, 130);
+            this.FilterGB.TabIndex = 33;
+            this.FilterGB.TabStop = false;
+            this.FilterGB.Text = "Filters";
+            // 
+            // filterStepNUD
+            // 
+            this.filterStepNUD.DecimalPlaces = 6;
+            this.filterStepNUD.Location = new System.Drawing.Point(37, 42);
+            this.filterStepNUD.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.filterStepNUD.Name = "filterStepNUD";
+            this.filterStepNUD.Size = new System.Drawing.Size(67, 20);
+            this.filterStepNUD.TabIndex = 30;
+            this.filterStepNUD.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(6, 46);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(29, 13);
+            this.label49.TabIndex = 29;
+            this.label49.Text = "Step";
+            // 
+            // filterFreqNUD
+            // 
+            this.filterFreqNUD.DecimalPlaces = 2;
+            this.filterFreqNUD.Location = new System.Drawing.Point(37, 19);
+            this.filterFreqNUD.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.filterFreqNUD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.filterFreqNUD.Name = "filterFreqNUD";
+            this.filterFreqNUD.Size = new System.Drawing.Size(67, 20);
+            this.filterFreqNUD.TabIndex = 28;
+            this.filterFreqNUD.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(10, 23);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(16, 13);
+            this.label50.TabIndex = 27;
+            this.label50.Text = "fc";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(5, 102);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(31, 13);
+            this.label51.TabIndex = 26;
+            this.label51.Text = "Type";
+            // 
+            // filterTypeGB
+            // 
+            this.filterTypeGB.FormattingEnabled = true;
+            this.filterTypeGB.Items.AddRange(new object[] {
+            "Low Freq",
+            "Hight Freq",
+            "Band pass filter",
+            "Notch filter"});
+            this.filterTypeGB.Location = new System.Drawing.Point(42, 98);
+            this.filterTypeGB.Name = "filterTypeGB";
+            this.filterTypeGB.Size = new System.Drawing.Size(170, 21);
+            this.filterTypeGB.TabIndex = 25;
+            // 
+            // filterStepsNUD
+            // 
+            this.filterStepsNUD.Location = new System.Drawing.Point(37, 65);
+            this.filterStepsNUD.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.filterStepsNUD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.filterStepsNUD.Name = "filterStepsNUD";
+            this.filterStepsNUD.Size = new System.Drawing.Size(67, 20);
+            this.filterStepsNUD.TabIndex = 24;
+            this.filterStepsNUD.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(6, 69);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(34, 13);
+            this.label52.TabIndex = 23;
+            this.label52.Text = "Steps";
+            // 
+            // filterSNUD
+            // 
+            this.filterSNUD.DecimalPlaces = 2;
+            this.filterSNUD.Location = new System.Drawing.Point(140, 20);
+            this.filterSNUD.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.filterSNUD.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.filterSNUD.Name = "filterSNUD";
+            this.filterSNUD.Size = new System.Drawing.Size(70, 20);
+            this.filterSNUD.TabIndex = 22;
+            this.filterSNUD.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // fildasda
+            // 
+            this.fildasda.AutoSize = true;
+            this.fildasda.Location = new System.Drawing.Point(117, 23);
+            this.fildasda.Name = "fildasda";
+            this.fildasda.Size = new System.Drawing.Size(26, 13);
+            this.fildasda.TabIndex = 20;
+            this.fildasda.Text = "S = ";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(116, 26);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(0, 13);
+            this.label55.TabIndex = 15;
+            // 
+            // randGB
+            // 
+            this.randGB.BackColor = System.Drawing.Color.Transparent;
+            this.randGB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.randGB.Controls.Add(this.RandStep);
+            this.randGB.Controls.Add(this.label32);
+            this.randGB.Controls.Add(this.RandStart);
+            this.randGB.Controls.Add(this.label25);
+            this.randGB.Controls.Add(this.label20);
+            this.randGB.Controls.Add(this.RandTypeCB);
+            this.randGB.Controls.Add(this.randSteps);
+            this.randGB.Controls.Add(this.label21);
+            this.randGB.Controls.Add(this.randMax);
+            this.randGB.Controls.Add(this.randMin);
+            this.randGB.Controls.Add(this.label22);
+            this.randGB.Controls.Add(this.label23);
+            this.randGB.Controls.Add(this.label24);
+            this.randGB.Location = new System.Drawing.Point(1, 29);
+            this.randGB.Name = "randGB";
+            this.randGB.Size = new System.Drawing.Size(219, 130);
+            this.randGB.TabIndex = 7;
+            this.randGB.TabStop = false;
+            this.randGB.Text = "Random";
+            // 
+            // RandStep
+            // 
+            this.RandStep.DecimalPlaces = 6;
+            this.RandStep.Location = new System.Drawing.Point(37, 65);
+            this.RandStep.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.RandStep.Name = "RandStep";
+            this.RandStep.Size = new System.Drawing.Size(81, 20);
+            this.RandStep.TabIndex = 30;
+            this.RandStep.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(5, 69);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(29, 13);
+            this.label32.TabIndex = 29;
+            this.label32.Text = "Step";
+            // 
+            // RandStart
+            // 
+            this.RandStart.DecimalPlaces = 2;
+            this.RandStart.Location = new System.Drawing.Point(6, 33);
+            this.RandStart.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.RandStart.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.RandStart.Name = "RandStart";
+            this.RandStart.Size = new System.Drawing.Size(67, 20);
+            this.RandStart.TabIndex = 28;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(3, 17);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(29, 13);
+            this.label25.TabIndex = 27;
+            this.label25.Text = "Start";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(5, 102);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(31, 13);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "Type";
+            // 
+            // RandTypeCB
+            // 
+            this.RandTypeCB.FormattingEnabled = true;
+            this.RandTypeCB.Items.AddRange(new object[] {
+            "Default C# Random",
+            "Array Random",
+            "Custom Random"});
+            this.RandTypeCB.Location = new System.Drawing.Point(42, 98);
+            this.RandTypeCB.Name = "RandTypeCB";
+            this.RandTypeCB.Size = new System.Drawing.Size(170, 21);
+            this.RandTypeCB.TabIndex = 25;
+            // 
+            // randSteps
+            // 
+            this.randSteps.Location = new System.Drawing.Point(149, 65);
+            this.randSteps.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.randSteps.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.randSteps.Name = "randSteps";
+            this.randSteps.Size = new System.Drawing.Size(64, 20);
+            this.randSteps.TabIndex = 24;
+            this.randSteps.Value = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(117, 69);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(34, 13);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Steps";
+            // 
+            // randMax
+            // 
+            this.randMax.DecimalPlaces = 2;
+            this.randMax.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.randMax.Location = new System.Drawing.Point(149, 33);
+            this.randMax.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.randMax.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.randMax.Name = "randMax";
+            this.randMax.Size = new System.Drawing.Size(63, 20);
+            this.randMax.TabIndex = 22;
+            this.randMax.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // randMin
+            // 
+            this.randMin.DecimalPlaces = 2;
+            this.randMin.Location = new System.Drawing.Point(78, 33);
+            this.randMin.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.randMin.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.randMin.Name = "randMin";
+            this.randMin.Size = new System.Drawing.Size(67, 20);
+            this.randMin.TabIndex = 21;
+            this.randMin.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(150, 17);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(26, 13);
+            this.label22.TabIndex = 20;
+            this.label22.Text = "max";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(75, 17);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(23, 13);
+            this.label23.TabIndex = 19;
+            this.label23.Text = "min";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(118, 40);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(0, 13);
+            this.label24.TabIndex = 15;
+            // 
             // Anal_page
             // 
-            this.Anal_page.Controls.Add(this.geneticalGB);
-            this.Anal_page.Controls.Add(this.ampModulationGB);
-            this.Anal_page.Controls.Add(this.SNRGB);
             this.Anal_page.Controls.Add(this.label33);
             this.Anal_page.Controls.Add(this.AnalActCB);
-            this.Anal_page.Controls.Add(this.StatGB);
-            this.Anal_page.Controls.Add(this.InterCorrGB);
             this.Anal_page.Controls.Add(this.FurieGB);
             this.Anal_page.Controls.Add(this.AutocorGP);
             this.Anal_page.Controls.Add(this.DistribGB);
+            this.Anal_page.Controls.Add(this.geneticalGB);
+            this.Anal_page.Controls.Add(this.ampModulationGB);
+            this.Anal_page.Controls.Add(this.SNRGB);
+            this.Anal_page.Controls.Add(this.StatGB);
+            this.Anal_page.Controls.Add(this.InterCorrGB);
             this.Anal_page.Location = new System.Drawing.Point(4, 22);
             this.Anal_page.Name = "Anal_page";
             this.Anal_page.Size = new System.Drawing.Size(222, 325);
             this.Anal_page.TabIndex = 2;
             this.Anal_page.Text = "Analysis";
             this.Anal_page.UseVisualStyleBackColor = true;
-            // 
-            // geneticalGB
-            // 
-            this.geneticalGB.Controls.Add(this.geneticalModelCB);
-            this.geneticalGB.Controls.Add(this.geneticalEtalonModelCB);
-            this.geneticalGB.Controls.Add(this.label66);
-            this.geneticalGB.Controls.Add(this.label67);
-            this.geneticalGB.Controls.Add(this.geneticalBtn);
-            this.geneticalGB.Controls.Add(this.label68);
-            this.geneticalGB.Controls.Add(this.geneticalNameTB);
-            this.geneticalGB.Controls.Add(this.label69);
-            this.geneticalGB.Controls.Add(this.geneticalStepsNUD);
-            this.geneticalGB.Location = new System.Drawing.Point(3, 30);
-            this.geneticalGB.Name = "geneticalGB";
-            this.geneticalGB.Size = new System.Drawing.Size(216, 159);
-            this.geneticalGB.TabIndex = 13;
-            this.geneticalGB.TabStop = false;
-            this.geneticalGB.Text = "Genetical alhoritm";
-            // 
-            // geneticalModelCB
-            // 
-            this.geneticalModelCB.FormattingEnabled = true;
-            this.geneticalModelCB.Location = new System.Drawing.Point(48, 68);
-            this.geneticalModelCB.Name = "geneticalModelCB";
-            this.geneticalModelCB.Size = new System.Drawing.Size(162, 21);
-            this.geneticalModelCB.TabIndex = 9;
-            this.geneticalModelCB.SelectedIndexChanged += new System.EventHandler(this.GeneticalModelCB_SelectedIndexChanged);
-            this.geneticalModelCB.Click += new System.EventHandler(this.GeneticalModelCB_Click);
-            // 
-            // geneticalEtalonModelCB
-            // 
-            this.geneticalEtalonModelCB.FormattingEnabled = true;
-            this.geneticalEtalonModelCB.Location = new System.Drawing.Point(48, 40);
-            this.geneticalEtalonModelCB.Name = "geneticalEtalonModelCB";
-            this.geneticalEtalonModelCB.Size = new System.Drawing.Size(160, 21);
-            this.geneticalEtalonModelCB.TabIndex = 8;
-            this.geneticalEtalonModelCB.SelectedIndexChanged += new System.EventHandler(this.EtalonModelCB_SelectedIndexChanged);
-            this.geneticalEtalonModelCB.Click += new System.EventHandler(this.EtalonModelCB_Click);
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(0, 45);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(37, 13);
-            this.label66.TabIndex = 10;
-            this.label66.Text = "Etalon";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(0, 71);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(51, 13);
-            this.label67.TabIndex = 11;
-            this.label67.Text = "EvoState";
-            // 
-            // geneticalBtn
-            // 
-            this.geneticalBtn.Location = new System.Drawing.Point(110, 93);
-            this.geneticalBtn.Name = "geneticalBtn";
-            this.geneticalBtn.Size = new System.Drawing.Size(98, 23);
-            this.geneticalBtn.TabIndex = 7;
-            this.geneticalBtn.Text = "Start evo";
-            this.geneticalBtn.UseVisualStyleBackColor = true;
-            this.geneticalBtn.Click += new System.EventHandler(this.geneticalBtn_Click);
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(2, 19);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(35, 13);
-            this.label68.TabIndex = 6;
-            this.label68.Text = "Name";
-            // 
-            // geneticalNameTB
-            // 
-            this.geneticalNameTB.Location = new System.Drawing.Point(48, 16);
-            this.geneticalNameTB.Name = "geneticalNameTB";
-            this.geneticalNameTB.Size = new System.Drawing.Size(160, 20);
-            this.geneticalNameTB.TabIndex = 5;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(6, 98);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(34, 13);
-            this.label69.TabIndex = 3;
-            this.label69.Text = "Steps";
-            // 
-            // geneticalStepsNUD
-            // 
-            this.geneticalStepsNUD.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.geneticalStepsNUD.Location = new System.Drawing.Point(43, 96);
-            this.geneticalStepsNUD.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.geneticalStepsNUD.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.geneticalStepsNUD.Name = "geneticalStepsNUD";
-            this.geneticalStepsNUD.Size = new System.Drawing.Size(61, 20);
-            this.geneticalStepsNUD.TabIndex = 2;
-            this.geneticalStepsNUD.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
             // 
             // ampModulationGB
             // 
@@ -2893,6 +2779,124 @@
             this.Distribution_Btn.UseVisualStyleBackColor = true;
             this.Distribution_Btn.Click += new System.EventHandler(this.Distribution_Btn_Click);
             // 
+            // geneticalGB
+            // 
+            this.geneticalGB.Controls.Add(this.geneticalModelCB);
+            this.geneticalGB.Controls.Add(this.geneticalEtalonModelCB);
+            this.geneticalGB.Controls.Add(this.label66);
+            this.geneticalGB.Controls.Add(this.label67);
+            this.geneticalGB.Controls.Add(this.geneticalBtn);
+            this.geneticalGB.Controls.Add(this.label68);
+            this.geneticalGB.Controls.Add(this.geneticalNameTB);
+            this.geneticalGB.Controls.Add(this.label69);
+            this.geneticalGB.Controls.Add(this.geneticalStepsNUD);
+            this.geneticalGB.Location = new System.Drawing.Point(3, 30);
+            this.geneticalGB.Name = "geneticalGB";
+            this.geneticalGB.Size = new System.Drawing.Size(216, 159);
+            this.geneticalGB.TabIndex = 13;
+            this.geneticalGB.TabStop = false;
+            this.geneticalGB.Text = "Genetical alhoritm";
+            // 
+            // geneticalModelCB
+            // 
+            this.geneticalModelCB.FormattingEnabled = true;
+            this.geneticalModelCB.Location = new System.Drawing.Point(48, 68);
+            this.geneticalModelCB.Name = "geneticalModelCB";
+            this.geneticalModelCB.Size = new System.Drawing.Size(162, 21);
+            this.geneticalModelCB.TabIndex = 9;
+            this.geneticalModelCB.SelectedIndexChanged += new System.EventHandler(this.GeneticalModelCB_SelectedIndexChanged);
+            this.geneticalModelCB.Click += new System.EventHandler(this.GeneticalModelCB_Click);
+            // 
+            // geneticalEtalonModelCB
+            // 
+            this.geneticalEtalonModelCB.FormattingEnabled = true;
+            this.geneticalEtalonModelCB.Location = new System.Drawing.Point(48, 40);
+            this.geneticalEtalonModelCB.Name = "geneticalEtalonModelCB";
+            this.geneticalEtalonModelCB.Size = new System.Drawing.Size(160, 21);
+            this.geneticalEtalonModelCB.TabIndex = 8;
+            this.geneticalEtalonModelCB.SelectedIndexChanged += new System.EventHandler(this.EtalonModelCB_SelectedIndexChanged);
+            this.geneticalEtalonModelCB.Click += new System.EventHandler(this.EtalonModelCB_Click);
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(0, 45);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(37, 13);
+            this.label66.TabIndex = 10;
+            this.label66.Text = "Etalon";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(0, 71);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(51, 13);
+            this.label67.TabIndex = 11;
+            this.label67.Text = "EvoState";
+            // 
+            // geneticalBtn
+            // 
+            this.geneticalBtn.Location = new System.Drawing.Point(110, 93);
+            this.geneticalBtn.Name = "geneticalBtn";
+            this.geneticalBtn.Size = new System.Drawing.Size(98, 23);
+            this.geneticalBtn.TabIndex = 7;
+            this.geneticalBtn.Text = "Start evo";
+            this.geneticalBtn.UseVisualStyleBackColor = true;
+            this.geneticalBtn.Click += new System.EventHandler(this.geneticalBtn_Click);
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(2, 19);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(35, 13);
+            this.label68.TabIndex = 6;
+            this.label68.Text = "Name";
+            // 
+            // geneticalNameTB
+            // 
+            this.geneticalNameTB.Location = new System.Drawing.Point(48, 16);
+            this.geneticalNameTB.Name = "geneticalNameTB";
+            this.geneticalNameTB.Size = new System.Drawing.Size(160, 20);
+            this.geneticalNameTB.TabIndex = 5;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(6, 98);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(34, 13);
+            this.label69.TabIndex = 3;
+            this.label69.Text = "Steps";
+            // 
+            // geneticalStepsNUD
+            // 
+            this.geneticalStepsNUD.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.geneticalStepsNUD.Location = new System.Drawing.Point(43, 96);
+            this.geneticalStepsNUD.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.geneticalStepsNUD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.geneticalStepsNUD.Name = "geneticalStepsNUD";
+            this.geneticalStepsNUD.Size = new System.Drawing.Size(61, 20);
+            this.geneticalStepsNUD.TabIndex = 2;
+            this.geneticalStepsNUD.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
             // SaveLoadPage
             // 
             this.SaveLoadPage.Controls.Add(this.fileWavSave);
@@ -2909,6 +2913,17 @@
             this.SaveLoadPage.TabIndex = 3;
             this.SaveLoadPage.Text = "Saved file";
             this.SaveLoadPage.UseVisualStyleBackColor = true;
+            // 
+            // fileWavSave
+            // 
+            this.fileWavSave.Location = new System.Drawing.Point(109, 97);
+            this.fileWavSave.Name = "fileWavSave";
+            this.fileWavSave.Size = new System.Drawing.Size(106, 23);
+            this.fileWavSave.TabIndex = 39;
+            this.fileWavSave.Text = "Save WAV";
+            this.fileWavSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.fileWavSave.UseVisualStyleBackColor = true;
+            this.fileWavSave.Click += new System.EventHandler(this.fileWavSave_Click);
             // 
             // fileWavLoad
             // 
@@ -3157,17 +3172,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // fileWavSave
-            // 
-            this.fileWavSave.Location = new System.Drawing.Point(109, 97);
-            this.fileWavSave.Name = "fileWavSave";
-            this.fileWavSave.Size = new System.Drawing.Size(106, 23);
-            this.fileWavSave.TabIndex = 39;
-            this.fileWavSave.Text = "Save WAV";
-            this.fileWavSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.fileWavSave.UseVisualStyleBackColor = true;
-            this.fileWavSave.Click += new System.EventHandler(this.fileWavSave_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3186,6 +3190,8 @@
             this.tabControl1.ResumeLayout(false);
             this.PrintPage.ResumeLayout(false);
             this.PrintPage.PerformLayout();
+            this.UnionGB.ResumeLayout(false);
+            this.UnionGB.PerformLayout();
             this.cuttingGB.ResumeLayout(false);
             this.cuttingGB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cutToNUD)).EndInit();
@@ -3199,23 +3205,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleEditNUD)).EndInit();
             this.convolutionGB.ResumeLayout(false);
             this.convolutionGB.PerformLayout();
-            this.UnionGB.ResumeLayout(false);
-            this.UnionGB.PerformLayout();
             this.DataPage.ResumeLayout(false);
             this.DataPage.PerformLayout();
-            this.FilterGB.ResumeLayout(false);
-            this.FilterGB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.filterStepNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filterFreqNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filterStepsNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filterSNUD)).EndInit();
-            this.randGB.ResumeLayout(false);
-            this.randGB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RandStep)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RandStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.randSteps)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.randMax)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.randMin)).EndInit();
             this.ExpGB.ResumeLayout(false);
             this.ExpGB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExpStepCtr)).EndInit();
@@ -3247,11 +3238,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.HarmStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HarmSteps)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HarmAmp)).EndInit();
+            this.FilterGB.ResumeLayout(false);
+            this.FilterGB.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.filterStepNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filterFreqNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filterStepsNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filterSNUD)).EndInit();
+            this.randGB.ResumeLayout(false);
+            this.randGB.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RandStep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RandStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.randSteps)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.randMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.randMin)).EndInit();
             this.Anal_page.ResumeLayout(false);
             this.Anal_page.PerformLayout();
-            this.geneticalGB.ResumeLayout(false);
-            this.geneticalGB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.geneticalStepsNUD)).EndInit();
             this.ampModulationGB.ResumeLayout(false);
             this.ampModulationGB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modulCoefficientNUD)).EndInit();
@@ -3272,6 +3273,9 @@
             this.DistribGB.ResumeLayout(false);
             this.DistribGB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DistribNUD)).EndInit();
+            this.geneticalGB.ResumeLayout(false);
+            this.geneticalGB.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.geneticalStepsNUD)).EndInit();
             this.SaveLoadPage.ResumeLayout(false);
             this.SaveLoadPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileStepNUD)).EndInit();
